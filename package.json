@@ -1,0 +1,25 @@
+{
+  "name": "redditdownloadergui",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proxtx/redditDownloaderGUI.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Proxtx/redditDownloaderGUI/issues"
+  },
+  "homepage": "https://github.com/Proxtx/redditDownloaderGUI#readme",
+  "dependencies": {
+    "@proxtx/config": "^1.0.2",
+    "@proxtx/framework": "^1.4.2",
+    "@proxtx/material": "^1.0.8"
+  }
+}

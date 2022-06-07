@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reddit Downloader GUI</title>
+    <link rel="stylesheet" href="lib/main.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bodySortView">
+    <m-card>
+      <div class="optionsWrap" id="optionsWrap">
+        <m-button type="outlined">Reset</m-button>
+        <m-divider type="vertical"></m-divider>
+        <div></div>
+        <m-divider type="vertical"></m-divider>
+        <m-checkbox></m-checkbox>
+        <m-text>Reverse</m-text>
+        <m-divider type="vertical"></m-divider>
+        <m-text-input placeholder="Search"></m-text-input>
+      </div>
+    </m-card>
+    <div class="contentWrap" id="contentWrapper"></div>
+    <script src="lib/guiLoader.js" type="module" defer></script>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>

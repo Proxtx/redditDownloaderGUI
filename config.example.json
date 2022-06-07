@@ -1,0 +1,6 @@
+{
+  "port": 3000,
+  "download": "path to download folder",
+  "indexInterval": 600000,
+  "pwd": "pwd"
+}
