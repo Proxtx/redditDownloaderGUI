@@ -12,7 +12,7 @@ export class Sorter {
 
   sort() {
     let compareFunctions = this.dataHandler.compareFunctions;
-    let shuffledArray = shuffle(this.dataHandler.indexFile.index);
+    let shuffledArray = [...shuffle(this.dataHandler.indexFile.index)];
 
     let sortedArray = shuffledArray.sort(compareFunctions[this.sortBy]);
 

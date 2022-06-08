@@ -13,10 +13,9 @@ export class SortController {
   }
 
   loadElements = () => {
-    this.resetButton = this.wrapper.children[0];
-    this.reverseCheckbox = this.wrapper.children[4];
-    this.searchBar = this.wrapper.children[7];
-    this.buttonWrap = this.wrapper.children[2];
+    this.reverseCheckbox = this.wrapper.children[2];
+    this.searchBar = this.wrapper.children[5];
+    this.buttonWrap = this.wrapper.children[0];
     this.generateButtons();
 
     this.reverseCheckbox.addEventListener("change", () => {

@@ -21,16 +21,21 @@ export const loadOverview = (
     sorterAttributes
   );
   let sorted;
-  if (
-    sorterResults[sorterDataHandler]?.[sorterAttributes]?.info.dataFrom >=
-    sorterInstance.maxDataTime
-  )
-    sorted = sorterResults[sorterDataHandler][sorterAttributes];
-  else sorted = sorterInstance.sort();
 
-  sorterResults[sorterDataHandler]
-    ? (sorterResults[sorterDataHandler][sorterAttributes] = sorted)
-    : (sorterResults[sorterDataHandler] = { [sorterAttributes]: sorted });
+  let sortedIdArray = [
+    sorterDataHandler,
+    ...sorterDataHandlerAttributes,
+    ...sorterAttributes,
+  ];
+
+  if (
+    sorterResults[sortedIdArray]?.info.dataFrom >= sorterInstance.maxDataTime
+  ) {
+    sorted = sorterResults[sortedIdArray];
+  } else {
+    sorted = sorterInstance.sort();
+    sorterResults[sortedIdArray] = sorted;
+  }
 
   return {
     success: true,

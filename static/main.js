@@ -51,12 +51,3 @@ new SortedOverview(
     ).sortingOptions
   )
 );
-
-console.log(
-  await overviewManager.loadOverview(
-    cookie.pwd,
-    "posts",
-    [true, ""],
-    ["name", false, "Bike"]
-  )
-);

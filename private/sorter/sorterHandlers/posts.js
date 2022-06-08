@@ -30,6 +30,6 @@ export class SortDataHandler {
   compareFunctions = compareFunctions;
 
   entrySearchStringProvider = (entry) => {
-    return entry.title;
+    return entry.title + entry.author + entry.subreddit;
   };
 }
