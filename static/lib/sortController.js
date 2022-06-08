@@ -8,7 +8,6 @@ export class SortController {
   constructor(wrapper, sortingOptions) {
     this.wrapper = wrapper;
     this.sortingOptions = sortingOptions;
-    console.log(sortingOptions);
     this.loadElements();
   }
 

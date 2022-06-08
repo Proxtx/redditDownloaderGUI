@@ -50,7 +50,7 @@ export class Index {
       for (let i of subreddit.indexFile.index) index.push(i);
       subredditIndex.push({
         subreddit: subredditName,
-        previewImage: randomArrayIndex(subreddit.indexFile.index),
+        previewPost: randomArrayIndex(subreddit.indexFile.index),
       });
     }
 
