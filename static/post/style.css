@@ -28,11 +28,16 @@
 }
 
 img {
-  max-width: 100%;
+  border: 2px solid black;
   margin-bottom: 5px;
 }
 
 video {
-  max-width: 100%;
   margin-bottom: 5px;
+}
+
+#content {
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
 }
