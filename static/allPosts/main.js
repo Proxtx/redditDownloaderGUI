@@ -16,6 +16,11 @@ initGUI(
       data: extHandlerResult.prefix + download.data,
       textSize: "none",
       type: extHandlerResult.ext,
+      click: async () => {
+        await new Promise((r) => setTimeout(r, 1000));
+        cookie.post = JSON.stringify(post);
+        window.location.pathname = "/post/";
+      },
     };
   }
 );

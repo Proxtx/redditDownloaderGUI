@@ -1,0 +1,38 @@
+.attribute {
+  border-top: 0.5px solid black;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  color: black;
+}
+
+.dataWrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.dataAttribute {
+  width: 100%;
+}
+
+.dataValue {
+  width: 100%;
+  border-left: 0.1px dashed black;
+  padding-left: 2px;
+}
+
+#info {
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+video {
+  max-width: 100%;
+  margin-bottom: 5px;
+}

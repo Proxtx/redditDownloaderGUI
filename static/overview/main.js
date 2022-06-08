@@ -19,6 +19,11 @@ initGUI(
       data: extHandlerResult.prefix + download.data,
       textSize: "normal",
       type: extHandlerResult.ext,
+      click: async () => {
+        await new Promise((r) => setTimeout(r, 1000));
+        cookie.subreddit = post.subreddit;
+        window.location.pathname = "/subreddit/";
+      },
     };
   }
 );

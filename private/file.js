@@ -14,6 +14,7 @@ export class File {
         files: await this.files(),
         author: this.author,
         subreddit: this.subreddit,
+        link: this.link,
       };
     })();
   }
@@ -47,6 +48,6 @@ export class File {
   }
 
   get link() {
-    return "https://reddit.com/" + this.info.link;
+    return "https://reddit.com" + this.info.link;
   }
 }
