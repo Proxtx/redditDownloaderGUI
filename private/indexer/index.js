@@ -36,6 +36,7 @@ export class Index {
         (async () => {
           if (!this.subredditIndexes[value])
             this.subredditIndexes[value] = await new SubredditIndex(value);
+          else await this.subredditIndexes[value].index();
         })()
       );
     });
