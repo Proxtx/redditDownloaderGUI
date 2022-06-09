@@ -30,10 +30,13 @@
 img {
   border: 2px solid black;
   margin-bottom: 5px;
+  max-width: 100%;
 }
 
 video {
+  border: 2px solid black;
   margin-bottom: 5px;
+  max-width: 100%;
 }
 
 #content {
