@@ -18,6 +18,8 @@ export const compareFunctions = {
   },
 };
 
+export const defaultCompareFunction = "date";
+
 export class SortDataHandler {
   constructor(global, subreddit) {
     this.global = global;

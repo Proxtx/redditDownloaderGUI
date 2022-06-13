@@ -2,6 +2,7 @@ import config from "@proxtx/config";
 import {
   sorterProvider,
   sortDataHandlerCompareFunctions,
+  defaultCompareFunction,
 } from "../private/sorter/sorterProvider.js";
 
 let sorterResults = {};
@@ -50,5 +51,6 @@ export const sortDataHandlerSortingOptions = (pwd, sortDataHandler) => {
   return {
     success: true,
     sortingOptions: sortDataHandlerCompareFunctions(sortDataHandler),
+    default: defaultCompareFunction(sortDataHandler),
   };
 };

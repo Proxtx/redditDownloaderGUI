@@ -23,3 +23,7 @@ export const sorterProvider = (
 export const sortDataHandlerCompareFunctions = (sortDataHandler) => {
   return Object.keys(sortDataHandlers[sortDataHandler].compareFunctions);
 };
+
+export const defaultCompareFunction = (sortDataHandler) => {
+  return sortDataHandlers[sortDataHandler].defaultCompareFunction;
+};

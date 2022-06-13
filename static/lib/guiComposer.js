@@ -41,12 +41,10 @@ export const initGUI = async (
     },
     new SortController(
       optionsWrap,
-      (
-        await overviewManager.sortDataHandlerSortingOptions(
-          cookie.pwd,
-          sorterDataHandler
-        )
-      ).sortingOptions
+      await overviewManager.sortDataHandlerSortingOptions(
+        cookie.pwd,
+        sorterDataHandler
+      )
     )
   );
 };

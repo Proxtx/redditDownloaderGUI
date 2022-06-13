@@ -7,7 +7,8 @@ export class SortController {
 
   constructor(wrapper, sortingOptions) {
     this.wrapper = wrapper;
-    this.sortingOptions = sortingOptions;
+    this.sortingOptions = sortingOptions.sortingOptions;
+    this.defaultSortingOption = sortingOptions.default;
     this.loadElements();
   }
 
@@ -29,6 +30,8 @@ export class SortController {
   };
 
   generateButtons = async () => {
+    let defaultButton;
+
     this.sortingOptions.forEach((value) => {
       let button = document.createElement("m-button");
       button.setAttribute("type", "outlined");
@@ -38,10 +41,11 @@ export class SortController {
       button.innerText = value;
       this.buttonWrap.appendChild(button);
       this.buttons.push({ button, option: value });
+      if (this.defaultSortingOption == value) defaultButton = button;
     });
 
-    await uiBuilder.ready(this.buttons[0].button);
-    this.buttons[0].button.click();
+    await uiBuilder.ready(defaultButton);
+    defaultButton.click();
   };
 
   sortingOptionsButtonClick = (option, button) => {

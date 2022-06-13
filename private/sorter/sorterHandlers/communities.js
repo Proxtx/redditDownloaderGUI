@@ -6,6 +6,8 @@ export const compareFunctions = {
   },
 };
 
+export const defaultCompareFunction = "name";
+
 export class SortDataHandler {
   indexFile = index.subredditIndexFile;
   compareFunctions = compareFunctions;
