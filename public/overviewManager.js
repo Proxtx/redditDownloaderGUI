@@ -4,6 +4,7 @@ import {
   sortDataHandlerCompareFunctions,
   defaultCompareFunction,
 } from "../private/sorter/sorterProvider.js";
+import { index } from "../private/indexClassHolder.js";
 
 let sorterResults = {};
 
@@ -53,4 +54,9 @@ export const sortDataHandlerSortingOptions = (pwd, sortDataHandler) => {
     sortingOptions: sortDataHandlerCompareFunctions(sortDataHandler),
     default: defaultCompareFunction(sortDataHandler),
   };
+};
+
+export const reIndex = async (pwd) => {
+  if (pwd != config.pwd) return;
+  await index.index();
 };

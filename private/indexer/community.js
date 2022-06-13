@@ -11,7 +11,6 @@ export class SubredditIndex {
 
     return (async () => {
       this.indexFile = await new IndexFile(this.folder + "/index.json");
-      if (this.indexFile.indexNecessary) await this.index();
       await this.index();
       return this;
     })();

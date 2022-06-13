@@ -5,6 +5,8 @@ body {
   width: 100vw;
   height: 100vh;
   margin: 0;
+  flex-direction: column;
+  gap: 10px;
 }
 
 #contentWrap {
@@ -17,4 +19,8 @@ body {
   justify-content: center;
   width: 100%;
   gap: 10px;
+}
+
+#indexingCard {
+  display: none;
 }
