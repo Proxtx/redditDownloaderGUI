@@ -20,6 +20,6 @@
   "dependencies": {
     "@proxtx/config": "^1.0.2",
     "@proxtx/framework": "^1.4.2",
-    "@proxtx/material": "^1.0.81"
+    "@proxtx/material": "^1.1.1"
   }
 }
