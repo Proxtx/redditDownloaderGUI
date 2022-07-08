@@ -6,7 +6,7 @@ const post = JSON.parse(cookie.post);
 const info = document.getElementById("info");
 const content = document.getElementById("content");
 
-post.date = new Date(post.date);
+post.date = new Date(post.date).toISOString();
 
 const displayObject = (object) => {
   let obj = document.createElement("div");
