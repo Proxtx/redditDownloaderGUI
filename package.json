@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Proxtx/redditDownloaderGUI#readme",
   "dependencies": {
     "@proxtx/config": "^1.0.2",
-    "@proxtx/framework": "^1.5.2",
+    "@proxtx/framework": "^1.5.3",
     "@proxtx/material": "^1.1.1"
   }
 }
