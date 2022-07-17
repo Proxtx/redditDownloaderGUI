@@ -55,11 +55,11 @@ info.appendChild(displayObject(post));
 
 const generateImages = async () => {
   for (let file of post.files) {
-    let download = (await fileServer.loadFile(cookie.pwd, file)).data;
+    let loadId = await fileServer.loadFile(cookie.pwd, file);
     let extHandlerResult = extHandler(file);
     let dataDisplay = generateDataDisplay({
       type: extHandlerResult.ext,
-      data: extHandlerResult.prefix + download,
+      src: "/file.route/?perm=" + loadId.perm,
     });
 
     content.appendChild(dataDisplay);

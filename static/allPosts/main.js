@@ -10,10 +10,10 @@ initGUI(
   [true, ""],
   async (post, fileServer, extHandler) => {
     let extHandlerResult = extHandler(post.files[0]);
-    let download = await fileServer.loadFile(cookie.pwd, post.files[0]);
+    let loadId = await fileServer.loadFile(cookie.pwd, post.files[0]);
     return {
       text: post.title,
-      data: extHandlerResult.prefix + download.data,
+      src: "/file.route/?perm=" + loadId.perm,
       textSize: "none",
       type: extHandlerResult.ext,
       click: async () => {

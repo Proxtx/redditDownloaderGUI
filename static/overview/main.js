@@ -10,13 +10,13 @@ initGUI(
   [true, ""],
   async (post, fileServer, extHandler) => {
     let extHandlerResult = extHandler(post.previewPost.files[0]);
-    let download = await fileServer.loadFile(
+    let loadId = await fileServer.loadFile(
       cookie.pwd,
       post.previewPost.files[0]
     );
     return {
       text: post.subreddit,
-      data: extHandlerResult.prefix + download.data,
+      src: "/file.route/?perm=" + loadId.perm,
       textSize: "normal",
       type: extHandlerResult.ext,
       click: async () => {

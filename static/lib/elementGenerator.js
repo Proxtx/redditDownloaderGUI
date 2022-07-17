@@ -2,7 +2,7 @@ export const generate = (options) => {
   options = {
     ...{
       type: "img",
-      data: "",
+      src: "",
       textSize: "normal",
       text: "Text",
       click: "redirect/",
@@ -55,7 +55,7 @@ export const generateDataDisplay = (options) => {
       break;
   }
 
-  dataDisplay.src = options.data;
+  dataDisplay.src = options.src;
 
   return dataDisplay;
 };
