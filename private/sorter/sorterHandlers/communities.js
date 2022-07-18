@@ -4,6 +4,9 @@ export const compareFunctions = {
   name: (a, b) => {
     return a.subreddit.localeCompare(b.subreddit);
   },
+  random: (a, b) => {
+    return 0;
+  },
 };
 
 export const defaultCompareFunction = "name";
