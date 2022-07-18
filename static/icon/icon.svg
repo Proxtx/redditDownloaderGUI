@@ -26,9 +26,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:lockguides="true"
-     inkscape:zoom="0.25"
-     inkscape:cx="804"
-     inkscape:cy="868"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="1611.4963"
+     inkscape:cy="673.16565"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="1912"
@@ -58,7 +58,7 @@
        x2="1.3299835"
        y2="161.21835"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(369.72738,38.3862)" />
+       gradientTransform="matrix(5.9586147,0,0,1,369.7274,38.3862)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient6232"
@@ -68,7 +68,7 @@
        y1="161.21835"
        x2="1.3299835"
        y2="161.21835"
-       gradientTransform="translate(-530.80347,38.3862)" />
+       gradientTransform="matrix(5.9587207,0,0,1,-530.80355,38.3862)" />
   </defs>
   <g
      inkscape:label="Ebene 1"
@@ -109,16 +109,16 @@
        y="115.26125"
        transform="scale(-1,1)" />
     <rect
-       style="fill:url(#linearGradient6234);fill-opacity:1;stroke-width:0.264583"
+       style="fill:url(#linearGradient6234);fill-opacity:1;stroke-width:0.645854"
        id="rect4406"
-       width="1.3299835"
+       width="7.924859"
        height="31.527142"
        x="369.72739"
        y="183.84097" />
     <rect
-       style="fill:url(#linearGradient6325);fill-opacity:1;stroke-width:0.264583"
+       style="fill:url(#linearGradient6325);fill-opacity:1;stroke-width:0.64586"
        id="rect6323"
-       width="1.3299835"
+       width="7.9250002"
        height="31.527142"
        x="-530.80347"
        y="183.84097"
