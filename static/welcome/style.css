@@ -1,12 +1,12 @@
 body {
   display: flex;
   align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
-  margin: 0;
+  margin-left: 0;
   flex-direction: column;
   gap: 10px;
+  overflow-x: hidden;
 }
 
 #contentWrap {
@@ -24,4 +24,18 @@ body {
 
 #indexingCard {
   display: none;
+}
+
+#statsHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 200px;
+  border: 0.2px solid black;
+  padding: 5px;
 }

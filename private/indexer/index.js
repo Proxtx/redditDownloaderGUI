@@ -2,6 +2,7 @@ import config from "@proxtx/config";
 import { IndexFile } from "./indexFile.js";
 import fs from "fs/promises";
 import { SubredditIndex } from "./community.js";
+import { setCounter } from "../stats.js";
 
 export class Index {
   subredditIndexes = {};
@@ -24,6 +25,8 @@ export class Index {
   };
 
   index = async () => {
+    setCounter("corrupted downloads", 0);
+
     let directories = (
       await fs.readdir(config.download, { withFileTypes: true })
     )
@@ -57,9 +60,11 @@ export class Index {
 
     this.indexFile.index = index;
     this.subredditIndexFile.index = subredditIndex;
+    setCounter("posts", this.indexFile.index.length);
+    setCounter("communities", this.subredditIndexFile.index.length);
   };
 }
 
-const randomArrayIndex = (array) => {
+export const randomArrayIndex = (array) => {
   return array[Math.floor(Math.random() * array.length)];
 };

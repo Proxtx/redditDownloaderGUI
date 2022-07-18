@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reddit Downloader GUI</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../lib/main.css" />
   </head>
   <body>
     <m-card>
@@ -29,7 +30,17 @@
       <m-text id="loading"></m-text><br />
       <m-text id="done"></m-text>
     </m-card>
+    <m-card>
+      <m-text><h2>Stats</h2></m-text>
+      <div id="statsHolder"></div>
+    </m-card>
+    <m-card id="previewPost">
+      <m-text><h2>Random Download</h2></m-text>
+    </m-card>
+
+    <script src="private/render/welcome.js" class="server"></script>
     <script src="../lib/guiLoader.js" type="module" defer></script>
     <script src="main.js" type="module"></script>
+    <script src="previewPost.js" type="module"></script>
   </body>
 </html>

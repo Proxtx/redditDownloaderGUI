@@ -1,4 +1,5 @@
 import fs from "fs/promises";
+import { increaseCounter } from "./stats.js";
 
 export class File {
   constructor(folder) {
@@ -21,9 +22,11 @@ export class File {
 
   files = async () => {
     let files = await fs.readdir(this.folder);
+    if (files.length == 0) increaseCounter("corrupted downloads");
     return this.info.downloads.map((value, index) => {
       for (let i of files) {
         if (i.split(".")[1] == "null") {
+          increaseCounter("corrupted downloads");
           return;
         }
         if (i.split(".")[0] == index) return this.folder + "/" + i;
