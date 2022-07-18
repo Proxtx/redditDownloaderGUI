@@ -2,7 +2,7 @@ import { fileServer } from "../lib/apiLoader.js";
 import { extHandler } from "../lib/lib.js";
 import { generateDataDisplay } from "../lib/elementGenerator.js";
 
-const post = JSON.parse(cookie.post);
+const post = JSON.parse(localStorage.post);
 const info = document.getElementById("info");
 const content = document.getElementById("content");
 

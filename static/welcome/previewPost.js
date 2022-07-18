@@ -13,4 +13,4 @@ let elem = generate({
 });
 postWrap.appendChild(elem);
 
-cookie.post = JSON.stringify(framework.data.post);
+localStorage.post = JSON.stringify(framework.data.post);

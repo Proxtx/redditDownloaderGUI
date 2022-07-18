@@ -17,7 +17,7 @@ initGUI(
       textSize: "none",
       type: extHandlerResult.ext,
       click: async () => {
-        cookie.post = JSON.stringify(post);
+        localStorage.post = JSON.stringify(post);
         await new Promise((r) => setTimeout(r, 1000));
         window.location.pathname = "/post/";
       },
