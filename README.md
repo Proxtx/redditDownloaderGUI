@@ -8,4 +8,6 @@ To get the files / downloads you need https://GitHub.com/Proxtx/redditDownloader
 2. Edit the pwd field to have a custom password
 3. Edit the dowload field to hold the path to the download folder of the redditDownloader
 4. Edit the port field (optional)
-5. Head to localhost:3000 (or your custom port)
+5. Run npm I
+6. Run node .
+7. Head to localhost:3000 (or your custom port)
