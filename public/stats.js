@@ -1,4 +1,4 @@
-import { getCounters, getCounter } from "../private/stats";
+import { getCounters, getCounter } from "../private/stats.js";
 import { checkPwd } from "./login.js";
 
 export const getAllStats = (pwd) => {
