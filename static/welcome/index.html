@@ -18,8 +18,8 @@
         <br />
         <br />
         <div class="buttonWrap">
-          <m-button id="all">All Posts</m-button
-          ><m-button id="communities">Communities</m-button>
+          <m-button id="all">All Posts </m-button>
+          <m-button id="communities">Communities</m-button>
         </div>
       </div>
     </m-card>
@@ -30,11 +30,19 @@
       <m-button id="reIndex" type="outlined">Re-index</m-button>
     </m-card>
     <m-card id="indexingCard">
-      <m-text id="loading"></m-text><br />
+      <m-text id="loading"></m-text>
+      <br />
       <m-text id="done"></m-text>
     </m-card>
     <m-card id="previewPost">
       <m-text><h2>Random Download</h2></m-text>
+      <m-button
+        type="outlined"
+        style="--scale: 0.5"
+        onclick="setTimeout(() => location.pathname = '/show', 500);"
+        >More
+      </m-button>
+      <br /><br />
     </m-card>
 
     <script src="private/render/welcome.js" class="server"></script>
