@@ -5,7 +5,7 @@
   "type": "module",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon . --ignore downloads"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Proxtx/redditDownloaderGUI#readme",
   "dependencies": {
     "@proxtx/config": "^1.0.2",
-    "@proxtx/framework": "^1.5.3",
-    "@proxtx/material": "^1.1.5"
+    "@proxtx/framework": "^1.5.8",
+    "@proxtx/material": "^1.2.6"
   }
 }
