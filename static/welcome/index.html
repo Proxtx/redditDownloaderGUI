@@ -44,6 +44,13 @@
       </m-button>
       <br /><br />
     </m-card>
+    <m-card>
+      <m-button
+        onclick="setTimeout(() => location.pathname = '/hidden', 100)"
+        stretch="true"
+        >Hide</m-button
+      >
+    </m-card>
 
     <script src="private/render/welcome.js" class="server"></script>
     <script src="../lib/guiLoader.js" type="module" defer></script>
