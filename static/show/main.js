@@ -41,5 +41,5 @@ const showPost = async () => {
 
 while (true) {
   showPost();
-  await new Promise((r) => setTimeout(r, 5000));
+  await new Promise((r) => setTimeout(r, 8000));
 }
