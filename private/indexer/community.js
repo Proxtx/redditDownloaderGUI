@@ -27,7 +27,20 @@ export class SubredditIndex {
     directories.forEach((value) => {
       promises.push(
         (async () => {
-          index.push(await new File(this.folder + "/" + value));
+	  try {
+	     let fileIndex = await new File(this.folder+"/"+value);
+             let files = fileIndex.files;
+             for(let file of files) {
+		let size = (await fs.stat(file)).size;
+                if(size < 1000) throw new Error("size too small"); 
+                //console.log(size);
+             }
+             index.push(await new File(this.folder + "/" + value));
+          }
+          catch(e){
+             // await fs.rm(this.folder+"/"+value,{recursive: true, force: true});
+             console.log("error indexing", value);
+          }
         })()
       );
     });

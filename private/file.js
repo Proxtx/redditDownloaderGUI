@@ -27,7 +27,7 @@ export class File {
       for (let i of files) {
         if (i.split(".")[1] == "null") {
           increaseCounter("corrupted downloads");
-          return;
+          //return;
         }
         if (i.split(".")[0] == index) return this.folder + "/" + i;
       }
