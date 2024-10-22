@@ -10,7 +10,7 @@ const getRandomPost = async (start) => {
       cookie.pwd,
       "posts",
       [true, ""],
-      ["random", false, ""],
+      ["random", true, ""],
       start,
       start + 1
     )
